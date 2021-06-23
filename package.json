@@ -13,6 +13,6 @@
     "version": "lerna version",
     "lerna": "lerna",
     "apis": "lerna --scope=apis run",
-    "test:all": "lerna --scope=apis --scope=web run test"
+    "test:all": "lerna --parallel --scope=apis --scope=web run test"
   }
 }
