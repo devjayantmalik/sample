@@ -1,9 +1,11 @@
 import express from "express";
 import { sum } from "./sum";
+import cors from "cors";
 
 const main = (): void => {
   const app = express();
 
+  app.use(cors());
   app.use(express.json({}));
 
   app.get("/sum", (req, res) => {
