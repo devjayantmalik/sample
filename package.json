@@ -10,6 +10,7 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "bootstrap": "lerna bootstrap",
     "version": "lerna version",
     "lerna": "lerna",
     "apis": "lerna --scope=apis run",
