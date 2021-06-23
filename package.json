@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "version": "lerna version",
+    "lerna": "lerna",
+    "apis": "lerna --scope=apis run",
+    "test:all": "lerna --scope=apis --scope=web run test"
+  }
+}

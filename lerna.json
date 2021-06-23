@@ -1,0 +1,7 @@
+{
+  "packages": ["packages/*", "backends/*", "frontends/*"],
+  "version": "independent",
+  "command": {
+    "publish": { "conventionalCommits": true, "message": "chore(release): %s" }
+  }
+}
